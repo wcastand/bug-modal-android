@@ -7,15 +7,18 @@
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wcastand.bugmodalandroid"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "softwareKeyboardLayoutMode": "resize",
+      "package": "com.wcastand.bugmodalandroid"
     },
     "web": {
       "bundler": "metro",
@@ -32,10 +35,13 @@
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "react-native-edge-to-edge"
     ],
     "experiments": {
-      "typedRoutes": true
+      "tsconfigPaths": true,
+      "typedRoutes": true,
+      "reactCompiler": true
     }
   }
 }
